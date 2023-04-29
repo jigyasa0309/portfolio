@@ -1,0 +1,615 @@
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&display=swap');
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Base styling */
+
+body {
+  font-family: "sans-serif";
+  font-size: 1.8rem; 
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgb(245, 183, 183);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: 'cursive', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  font-size: 72px;
+  background:black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 4.2rem;
+  color:#18e8e8;
+  border:.5px solid rgb(15, 14, 14);
+}
+p{
+  font-size:2rem;
+  color:#E1BEE7;
+  
+}
+
+/* Navigation Bar Styling */
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:auto;
+  background:#3e4e88;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+li{
+  display:inline;
+}
+
+ul{
+  list-style:none;
+  padding:10px;
+}
+
+a{
+  text-decoration:none;
+  margin-left:1.5em;
+  margin-right:1.5em;
+  font-size:1em;
+  color:#fff;
+}
+a:hover{
+  color:#beae87;
+}
+
+/* Section 1 Styling*/
+
+.image {
+  position :absolute;
+  top:80px;
+  left:70px;
+  width: 150px;
+  height:150px;
+  object-fit: cover;
+  border-radius:18px solid black;
+
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(90deg, #373434 0%, #131315 100%);
+}
+.welcome-section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(90deg, #373434 0%, #131315 100%);
+}
+.progress{
+  margin-left:60px;
+display:block;
+color:white;
+
+}
+.skills {
+  background:linear-gradient(90deg, #373434 0%, #131315 100%);
+}
+.technical{
+  margin-left:50px;
+  TEXT-ALIGN: left;
+   background:linear-gradient(90deg, #373434 0%, #131315 100%);
+}
+
+/* Section 2*/
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: #ECEFF1;
+  text-align: justify;
+}
+.projects-section-header {
+  max-width: 640px;
+  margin: 3rem auto 6rem auto;
+  border-bottom: 0 solid white;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  border-radius:38px;
+  word-spacing:4px;
+  letter-spacing:3px;
+  box-shadow:0 5px 20px #ddd;
+}
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.project {
+  background: #010101;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 28px;
+  box-shadow:0 2.8px 2.2px rgba(0, 0,0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  transition: all 2s, transform .5s, box_shadow .5s;
+}
+.project:hover{
+  box-shadow: 6px 6px 20px rgba(0,0,0,.6);
+  transform:scale(1.08);
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius:28px;
+  border-top-left-radius:28px;
+}
+.project-title {
+  font-family: "sans-serif";
+  font-size: 2rem;
+  text-align:center;
+  padding: 2rem 0.5rem;
+  color:#fff;
+  text-transform: uppercase;
+  
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+
+/* Contact section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: #363748;
+}
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+#con{
+  color:#fff;
+  border:none;
+}
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+.contact-details:hover {
+  transform: translateY(8px);
+  color:red;
+}
+.form{
+  max-width:640px;
+  margin-top:2rem;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+#name{
+  max-width:300px;
+  width:300px;
+  padding-top:12px;
+  padding-bottom:12px;
+  padding-right:1rem;
+  padding-left:1rem;
+  margin-top:2rem;
+  border-radius:28px;
+  text-align:center;  
+  outline:none;
+}
+
+#email{
+  max-width:300px;
+  width:300px;
+  padding-top:12px;
+  padding-bottom:12px;
+  padding-right:1rem;
+  padding-left:1rem;
+  margin-top:2rem;
+  border-radius:28px;
+  text-align:center;  
+  outline:none;
+}
+.btn{
+  margin-top:1rem;
+  background-color:red;
+  border-radius:28px;
+  padding-top:.7rem;
+  padding-right:2.1rem;
+  padding-bottom:1.1rem;
+  transition: all 2s, transform .5s, box_shadow .5s;
+
+}
+
+/* Footer Section */
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+  }
+  .wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 8px;
+    background: #0c0c0c;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook,
+  .wrapper .facebook .tooltip,
+  .wrapper .facebook .tooltip::before {
+    background: #1877F2;
+    color: #ffffff;
+  }
+  
+  .wrapper .twitter,
+  .wrapper .twitter .tooltip,
+  .wrapper .twitter .tooltip::before {
+    background: #1DA1F2;
+    color: #ffffff;
+  }
+  
+  .wrapper .instagram,
+  .wrapper .instagram .tooltip,
+  .wrapper .instagram .tooltip::before {
+    background: #E4405F;
+    color: #ffffff;
+  }
+   
+  .wrapper .youtube,
+  .wrapper .youtube .tooltip,
+  .wrapper .youtube .tooltip::before {
+    background: #CD201F;
+    color: #ffffff;
+  }
+ /*FOOTER*/
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: #2e2f30;
+  border-top: 4px solid #BFC8EA;
+}
+#foot{
+  color:#fff;
+  font-family: "ARIAL", sans-serif;
+}
+#fot{
+  margin-left:-.1rem;
+  color:#5cf7ff;
+  font-family: "ARIAL", sans-serif;
+}
+</style>
+</head>
+<body>
+<nav id="navbar" class="nav">
+  <ul>
+    <li>
+      <a href="#welcome-section">About</a>
+    </li>
+    <li>
+      <a href="#projects">Project</a>
+    </li>
+    <li>
+      <a href="#contact">Contact Me</a>
+    </li>
+  </ul>
+</nav>
+<!-- Second Section-->
+<section CLASS="welcome-section">
+  <div>
+    <img class="image"
+            src="C:\Users\Jigyasa Yadav\Downloads\myphoto.png"
+            alt="myphoto"
+          />
+    </div>
+    
+  <h1>Hello! I am Jigyasa yadav</h1>
+  <p><i>I am pursuing Btech</i></p>
+   <p><i>Completed my secondary and senior secondary education from St Mary's Higher Secondary Mhow.</i></p>
+<br>
+<p><i>Intrested in software development.</i></p>
+<BR>
+</section>
+<div class="skills">
+<H3 class ="technical">
+  MY TECHNICAL SKILLS:
+</H3>
+<DIV CLASS="PROGRESS">
+  <label for="SKILLS">HTML:</label>
+<progress id="SKILL1" value="85" max="100"> 85% </progress>
+<BR>
+<label for="SKILLS">CSS:</label>
+<progress id="SKILL2" value="85" max="100"> 85% </progress>
+<BR>
+<label for="SKILLS">C:</label>
+<progress id="SKILL3" value="90" max="100"> 90% </progress>
+<BR>
+</DIV>
+</div>
+<SECTION CLASS="welcome-section2">
+
+</SECTION>
+
+<section id="projects" class="project-section">
+      <h2 class="projects-section-header">My Project's</h2>
+
+  <div class="projects-grid">
+    
+    <a
+      href="https://github.com/jigyasa0309/website.git"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="C:\Users\Jigyasa Yadav\Pictures\Screenshots\Screenshot (105).png"
+        alt="project"
+      />
+      <p class="project-title">
+        
+        Responsive Website
+        
+      </p>
+    </a>
+
+ <a
+      href="https://github.com/jigyasa0309/"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="C:\Users\Jigyasa Yadav\Pictures\Screenshots\Screenshot (106).png"
+        alt="project"
+      />
+      <p class="project-title"> 
+        coaching website
+      </p>
+    </a>
+ <a
+      href="https://github.com/jigyasa0309/website.git"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="C:\Users\Jigyasa Yadav\Pictures\Screenshots\Screenshot (105).png"
+        alt="project"
+      />
+      <p class="project-title">
+        Responsive Website 
+      </p>
+    </a>
+  </div>
+</section>
+
+
+<!-- Third Section-->
+<section id="contact" class="contact-section">
+  <div class="contact-section-header">
+    <h2 id="con">Contact Me!...</h2>
+  </div>
+  <form>
+  <div class="form">
+    YOUR NAME:  <input 
+      type="text" 
+      id="text" 
+      placeholder="Your name here" 
+      name="enter name:"
+      required/><br>
+
+      <input 
+             type="email" 
+             id="email" 
+             placeholder="Your Email Address" 
+             name="email"
+             required/><br>
+             <button class="btn" >Submit</button>
+     </form>
+  </div>
+  </section>
+    <!-- START FOOTER SECTION -->
+<footer>
+  <ul class="wrapper">
+    <li class="icon facebook">
+      <span class="tooltip">Facebook</span>
+      <span><i class="fab fa-facebook-f"></i></span>
+    </li>
+    <li class="icon twitter">
+      <span class="tooltip">Twitter</span>
+      <span><i class="fab fa-twitter"></i></span>
+    </li>
+    <li class="icon instagram">
+      <span class="tooltip">Instagram</span>
+      <span><i class="fab fa-instagram"></i></span>
+    </li>
+    <li class="icon youtube">
+      <span class="tooltip">Youtube</span>
+      <span><i class="fab fa-youtube"></i></span>
+    </li>
+  </ul>
+  
+   <p id="foot">
+    &copy;copyrights reserved.
+<BR>Made by :-
+     <a id="fot"  target="_blank">JIGYASA YADAV
+    </a>
+  </p>
+</footer>
+
+<!-- END FOOTER SECTION -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="https://kit.fontawesome.com/3dad2fc280.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
